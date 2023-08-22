@@ -19,7 +19,10 @@ c = Consumer({
 c.subscribe(['events'])
 
 # We need to use our local ip. This would be updated manually.
-ip = '192.168.178.35'
+# ip = '192.168.178.35'
+# Raspberry PI 4 IP
+ip = "192.168.178.189" #3/.
+
 # URLs to connected with the classification-service and character-service
 url_saga = 'http://{}:5000/predict'.format(ip)
 url_character = 'http://{}:5010/characters'.format(ip)
